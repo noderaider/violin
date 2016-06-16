@@ -1,0 +1,118 @@
+{
+  "type": "Program",
+  "start": 0,
+  "end": 44,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 2,
+      "column": 0
+    }
+  },
+  "sourceType": "module",
+  "body": [
+    {
+      "type": "ExportDefaultDeclaration",
+      "start": 0,
+      "end": 42,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 42
+        }
+      },
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "start": 15,
+        "end": 42,
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 15
+          },
+          "end": {
+            "line": 1,
+            "column": 42
+          }
+        },
+        "id": {
+          "type": "Identifier",
+          "start": 24,
+          "end": 30,
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 24
+            },
+            "end": {
+              "line": 1,
+              "column": 30
+            }
+          },
+          "name": "violin"
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [
+          {
+            "type": "RestElement",
+            "start": 31,
+            "end": 38,
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 31
+              },
+              "end": {
+                "line": 1,
+                "column": 38
+              }
+            },
+            "argument": {
+              "type": "Identifier",
+              "start": 34,
+              "end": 38,
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 34
+                },
+                "end": {
+                  "line": 1,
+                  "column": 38
+                }
+              },
+              "name": "args"
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "start": 40,
+          "end": 42,
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 40
+            },
+            "end": {
+              "line": 1,
+              "column": 42
+            }
+          },
+          "body": []
+        },
+        "leadingComments": [],
+        "trailingComments": []
+      }
+    }
+  ]
+}
