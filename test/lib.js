@@ -10,8 +10,7 @@ describe('lib', function() {
 
   const violin = lib.default
   describe('violin', function() {
-    it('should be a function', violin.should.be.a('function'))
-
+    it('should be a function', () => violin.should.be.a('function'))
   })
 
 })
