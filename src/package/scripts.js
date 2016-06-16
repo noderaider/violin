@@ -16,7 +16,10 @@ export default ({}) => ({ 'start': 'run-p -lnc build-watch test-watch'
                         , 'clean-doc': 'rimraf doc'
                         , 'clean-test': 'rimraf coverage.lcov'
 
-                          /** COMPILE */
+                          /** INSTALL */
+                        , 'postinstall': 'ncp prebuilt/win32/x64/v6.2.1 node_modules'
+
+                          /** BUILD */
                         , 'prebuild': 'npm run clean'
                         , 'build': 'babel src/lib -d lib'
                         , 'build-watch': 'npm run build -- --watch'
