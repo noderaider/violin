@@ -17,7 +17,7 @@ export default ({}) => ({ 'start': 'run-p -lnc build-watch test-watch'
                         , 'clean-test': 'rimraf coverage.lcov'
 
                           /** PREBUILT */
-                        , 'prebuilt': 'prebuilt -p heapdump'
+                        , 'prebuilt': 'npm i heapdump@latest && prebuilt -p heapdump'
 
                           /** INSTALL */
                         , 'postinstall': 'prebuilt -i heapdump'
