@@ -2,6 +2,8 @@
 
 **Node instrumentation with pre-built node binaries.**
 
+**Internally packages and runs [heapdump](https://npmjs.com/packages/heapdump) so the consumer does not need node-gyp working on their machine.**
+
 
 [![Build Status](https://travis-ci.org/noderaider/violin.svg?branch=master)](https://travis-ci.org/noderaider/violin)
 [![codecov](https://codecov.io/gh/noderaider/violin/branch/master/graph/badge.svg)](https://codecov.io/gh/noderaider/violin)
