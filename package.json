@@ -24,7 +24,7 @@
     "clean-lib": "rimraf lib",
     "clean-doc": "rimraf doc",
     "clean-test": "rimraf coverage.lcov",
-    "_postinstall": "ncp prebuilt/win32/x64/v6.2.1 node_modules",
+    "prebuilt": "prebuilt -p heapdump",
     "postinstall": "prebuilt -i heapdump",
     "prebuild": "npm run clean",
     "build": "babel src/lib -d lib",
