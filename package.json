@@ -7,7 +7,7 @@
     "doc",
     "lib",
     "prebuilt",
-    "src",
+    "src"
   ],
   "keywords": [
     "sync",
