@@ -90,12 +90,12 @@
   },
   "author": "Cole Chamberlain <cole.chamberlain@gmail.com> (https://github.com/cchamberlain)",
   "bugs": {
-    "url": "https://github.com/noderaider/guitar/issues"
+    "url": "https://github.com/noderaider/violin/issues"
   },
-  "homepage": "http://guitar.js.org",
+  "homepage": "http://violin.js.org",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/noderaider/guitar.git"
+    "url": "git+https://github.com/noderaider/violin.git"
   }
 }
