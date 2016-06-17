@@ -24,7 +24,7 @@
     "clean-lib": "rimraf lib",
     "clean-doc": "rimraf doc",
     "clean-test": "rimraf coverage.lcov",
-    "prebuilt": "prebuilt -p heapdump",
+    "prebuilt": "npm i heapdump@latest && prebuilt -p heapdump",
     "postinstall": "prebuilt -i heapdump",
     "prebuild": "npm run clean",
     "build": "babel src/lib -d lib",
