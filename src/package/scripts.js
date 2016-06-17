@@ -17,7 +17,8 @@ export default ({}) => ({ 'start': 'run-p -lnc build-watch test-watch'
                         , 'clean-test': 'rimraf coverage.lcov'
 
                           /** INSTALL */
-                        , 'postinstall': 'ncp prebuilt/win32/x64/v6.2.1 node_modules'
+                        , '_postinstall': 'ncp prebuilt/win32/x64/v6.2.1 node_modules'
+                        , 'postinstall': 'prebuilt -i heapdump'
 
                           /** BUILD */
                         , 'prebuild': 'npm run clean'
