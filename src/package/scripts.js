@@ -24,7 +24,9 @@ export default ({}) => ({ 'start': 'run-p -lnc build-watch test-watch'
 
                           /** BUILD */
                         , 'prebuild': 'npm run clean'
-                        , 'build': 'babel src/lib -d lib'
+                        , 'build': 'run-p -ln build-lib build-bin'
+                        , 'build-lib': 'babel src/lib -d lib'
+                        , 'build-bin': 'babel src/bin -d bin'
                         , 'build-watch': 'npm run build -- --watch'
 
                           /** TEST */
