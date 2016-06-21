@@ -25,6 +25,7 @@
     "clean-doc": "rimraf doc",
     "clean-test": "rimraf coverage.lcov",
     "prebuilt": "npm i heapdump@latest && prebuilt -p heapdump",
+    "preinstall": "rimraf node_modules/heapdump",
     "postinstall": "prebuilt -i heapdump",
     "prebuild": "npm run clean",
     "build": "run-p -ln build-lib build-bin",
