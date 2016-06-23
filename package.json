@@ -70,6 +70,7 @@
     "upgrade": "ncu -a && npm update"
   },
   "dependencies": {
+    "bunyan": "^1.8.1",
     "chai": "^3.0.0",
     "prebuilt": "^0.1.6"
   },
