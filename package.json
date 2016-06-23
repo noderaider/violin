@@ -1,6 +1,6 @@
 {
   "name": "violin",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "Instrumentation with pre-built node binaries.",
   "main": "lib/index.js",
   "files": [
