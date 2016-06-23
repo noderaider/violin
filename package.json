@@ -25,7 +25,6 @@
     "clean-doc": "rimraf doc",
     "clean-test": "rimraf coverage.lcov",
     "prebuilt": "npm i heapdump@latest && prebuilt -p heapdump",
-    "_preinstall": "rimraf node_modules/heapdump",
     "postinstall": "prebuilt -i heapdump",
     "prebuild": "npm run clean",
     "build": "run-p -ln build-lib build-bin",
@@ -72,7 +71,7 @@
   "dependencies": {
     "bunyan": "^1.8.1",
     "chai": "^3.0.0",
-    "prebuilt": "^0.2.0"
+    "prebuilt": "^0.2.3"
   },
   "devDependencies": {
     "babel-cli": "latest",

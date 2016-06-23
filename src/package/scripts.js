@@ -20,7 +20,6 @@ export default ({}) => ({ 'start': 'run-p -lnc build-watch test-watch'
                         , 'prebuilt': 'npm i heapdump@latest && prebuilt -p heapdump'
 
                           /** INSTALL */
-                        , 'preinstall': 'rimraf node_modules/heapdump'
                         , 'postinstall': 'prebuilt -i heapdump'
 
                           /** BUILD */
