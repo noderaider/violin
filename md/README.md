@@ -20,8 +20,6 @@
 
 ```js
 import violin from 'violin'
-import { createLogger } from 'bunyan'
-
                                         /** Create a memory dump on startup */
 const opts =  { instrument: { memory: { startup: true
                                         /** Create a memory dump every 4 hours */
@@ -35,8 +33,5 @@ const opts =  { instrument: { memory: { startup: true
 const { instrument } = violin(opts)
 
 /** Start instrumenting memory per above options */
-instrument( { tracing: true
-            , logger = createLogger({ name: 'instrument' })
-            , logLevel: 'info'
-            } )
+instrument()
 ```

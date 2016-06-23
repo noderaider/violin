@@ -35,10 +35,7 @@ const opts =  { instrument: { memory: { startup: true
 const { instrument } = violin(opts)
 
 /** Start instrumenting memory per above options */
-instrument( { tracing: true
-            , logger = createLogger({ name: 'instrument' })
-            , logLevel: 'info'
-            } )
+instrument()
 ```
 
 ---
@@ -54,7 +51,7 @@ instrument( { tracing: true
      - [violin](#lib-violin)
        - [#instrument](#lib-violin-instrument)
 <a name=""></a>
- 
+
 <a name="lib"></a>
 # lib
 <a name="lib-default"></a>
