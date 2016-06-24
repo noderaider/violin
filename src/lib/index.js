@@ -50,9 +50,6 @@ export default function violin(opts) {
 
           if(x === 'uncaughtException') {
             process.on('uncaughtException', function violinUncaughtExceptionSnapshot (err) {
-              // prevent infinite recursion
-              process.removeListener('uncaughtException', violinUncaughtExceptionSnapshot)
-
               // log the exception
               log.fatal(err, `violin: subscribed instrument memory process event 'uncaughtException' was triggered, snapshot written to ${filename}. exiting...`)
               violinSnapshot('event_uncaughtException')
