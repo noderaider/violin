@@ -51,7 +51,7 @@ export default function violin(opts) {
           if(x === 'uncaughtException') {
             process.on('uncaughtException', function violinUncaughtExceptionSnapshot (err) {
               // log the exception
-              log.fatal(err, `violin: subscribed instrument memory process event 'uncaughtException' was triggered, snapshot written to ${filename}. exiting...`)
+              log.fatal(err, 'violin: an "uncaughtException" event was triggered. Writing a snapshot and rethrowing...')
               violinSnapshot('event_uncaughtException')
 
               if (typeof(log.streams[0]) !== 'object') return
