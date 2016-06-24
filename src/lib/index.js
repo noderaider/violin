@@ -36,7 +36,7 @@ export default function violin(opts) {
       }
       if(frequency) {
         frequency.should.be.a('number', 'violin: memory snapshot frequency must be a number')
-        const frequencyMinutes = (frequency / (1000 * 60 * 60)).toLocaleString()
+        const frequencyMinutes = (frequency / (1000 * 60)).toLocaleString()
         log.info(`violin: starting periodic heapdump snapshots every ${frequencyMinutes} minutes.`)
         let memoryIntervalID = setInterval(function violinFrequencySnapshot() { violinSnapshot('frequency') }, frequency)
         cancelMemoryPolling = () => clearInterval(memoryIntervalID)
